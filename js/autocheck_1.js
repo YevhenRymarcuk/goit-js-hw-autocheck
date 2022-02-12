@@ -43,6 +43,7 @@
 
 // checkAge(prompt());
 
+
 /*===================================*/
 // function checkStorage(available, ordered) {
 //   let message;
@@ -61,6 +62,7 @@
 
 // checkStorage(17, 9);
 
+
 /*===================================*/
 // let a = 5;
 // let b = 10;
@@ -72,6 +74,7 @@
 // console.log(b -= 4);
 // console.log(c *= 3);
 // console.log(d /= 10);
+
 
 /*===================================*/
 // Задача № 18 "ПРОВЕРКА БАЛАНСА И СПИСАНИЕ КРЕДИТОВ"
@@ -95,6 +98,7 @@
 
 // makeTransaction(10, 2, 30);
 
+
 /*===================================*/
 // Задача № 19 "ПРОВЕРКА ПАРОЛЯ"
 
@@ -116,6 +120,7 @@
 // }
 
 // checkPassword('jqueryismyjam');
+
 
 /*===================================*/
 // Задача № 20 "ПРОВЕРКА НАЛИЧИЯ ТОВАРА НА СКЛАДЕ"
@@ -140,6 +145,7 @@
 
 // checkStorage(20, 0);
 
+
 /*===================================*/
 // Задача № 21 "ВХОЖДЕНИЕ ЧИСЛА В ПРОСТОЙ ДИАПАЗОН"
 
@@ -153,6 +159,7 @@
 
 // isNumberInRange(10, 100, 440);
 
+
 /*===================================*/
 // Задача № 22 "ПРОВЕРКА ДОСТУПА ПО ТИПУ ПОДПИСКИ"
 
@@ -165,6 +172,7 @@
 // }
 
 // checkIfCanAccessContent('free')
+
 
 /*===================================*/
 // Задача № 23 "!!НЕ!!ВХОЖДЕНИЕ ЧИСЛА В ПРОСТОЙ ДИАПАЗОН"
@@ -180,6 +188,7 @@
 // }
 
 // isNumberNotInRange(10, 100, 888);
+
 
 /*===================================*/
 // Задача № 24 "ОПРЕДЕЛЕНИЕ ЗНАЧЕНИЯ СКИДКИ ПО НАКОПИТЕЛЬНОЙ СИСТЕМЕ"
@@ -210,6 +219,7 @@
 
 // getDiscount(50000);
 
+
 /*===================================*/
 // Задача № 25 "ПРОВЕРКА НАЛИЧИЯ ТОВАРА НА СКЛАДЕ С ПОМОЩЬЮ ТЕРНАРНОГО ОПЕРАТОРА"
 
@@ -225,6 +235,7 @@
 // }
 
 // checkStorage(2,10);
+
 
 /*===================================*/
 // Задача № 26 "ПРОВЕРКА ПАРОЛЯ С ПОМОЩЬЮ ТЕРНАРНОГО ОПЕРАТОРА"
@@ -244,36 +255,223 @@
 
 // checkPassword('jqueryismyjam');
 
+
 /*===================================*/
 // Задача № 27 "ПРОВЕРКА ТИПА ПОДПИСКИ С ПОМОЩЬЮ 'SWITCH'"
 
-function getSubscriptionPrice(type) {
-  let price;
-  // Change code below this line
+// function getSubscriptionPrice(type) {
+//   let price;
+//   // Change code below this line
 
- switch (type) { // Change this line
-    case 'starter': // Change this line
-      price = 0; // Change this line
-      break;
+//  switch (type) { // Change this line
+//     case 'starter': // Change this line
+//       price = 0; // Change this line
+//       break;
 
-    case 'professional': // Change this line
-      price = 20; // Change this line
-      break;
+//     case 'professional': // Change this line
+//       price = 20; // Change this line
+//       break;
 
-    case 'organization': // Change this line
-      price = 50; // Change this line
-      break;
-  }
+//     case 'organization': // Change this line
+//       price = 50; // Change this line
+//       break;
+//   }
 
-  console.log(price);
+//   console.log(price);
 
-  // Change code above this line
-  return price;
-}
+//   // Change code above this line
+//   return price;
+// }
 
-getSubscriptionPrice('organization');
+// getSubscriptionPrice('organization');
+
 
 /*===================================*/
-// Задача № 28 "ПРОВЕРКА ТИПА ПОДПИСКИ С ПОМОЩЬЮ 'SWITCH'"
+// Задача № 28 "ПРОВЕРКА ПАРОЛЯ С ПОМОЩЬЮ 'SWITCH' С БЛОКОМ 'DEFAULT'"
 
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   // Change code below this line
+
+//   // if (password === null) {
+//   //   message = "Canceled by user!";
+//   // } else if (password === ADMIN_PASSWORD) {
+//   //   message = "Welcome!";
+//   // } else {
+//   //   message = "Access denied, wrong password!";
+//   // }
+
+//   switch (password) {
+//     case null:
+//       message = 'Canceled by user!';
+//       break;
+    
+//     case ADMIN_PASSWORD:
+//       message = 'Welcome!';
+//       break;
+    
+//     default:
+//       message = 'Access denied, wrong password!';
+//   }
+
+//   console.log(message);
+
+//   // Change code above this line
+//   return message;
+// }
+
+// checkPassword('jqueryismyjam');
+
+
+/*===================================*/
+// Задача № 29 "ДОСТАВКА ТОВАРА С ПОМОЩЬЮ 'SWITCH' С БЛОКОМ 'DEFAULT'"
+
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+  
+//   let price;
+
+//   // message = `Shipping to ${country} will cost ${price} credits`;
+  
+//   switch (country) {
+
+//     case 'China':
+//       price = 100;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
+    
+//     case 'Chile':
+//       price = 250;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//     case 'Australia':
+//       price = 170;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//     case 'Jamaica':
+//       price = 120;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
+     
+//     default:
+//       message = 'Sorry, there is no delivery to your country';
+
+//   }
+  
+//   console.log(message);
+
+//   // Change code above this line
+//   return message;
+// }
+
+// getShippingCost('Australia');
+
+
+/*===================================*/
+// Задача № 30 "ДЛИНА СТРОКИ"
+
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+//   console.log(message)
+
+//   return message;
+// }
+
+// getNameLength('Yevhen');
+
+
+/*===================================*/
+// Задача № 31 "ИНДЕКСАЦИЯ ЭЛЕМЕНТОВ СТРОКИ"
+
+// const courseTopic = "JavaScript essentials";
+// // Change code below this line
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+// console.log(courseTopicLength);
+// console.log(firstElement);
+// console.log(lastElement);
+
+// // Change code above this line
+
+
+/*===================================*/
+// // Задача № 32 "МЕТОД 'SLICE()'"
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length); // Change this line
+
+//   console.log('Tочно ' + substring);
+
+//   return substring;
+// }
+
+// getSubstring('хуйня какая-то', 5);
+
+
+/*===================================*/
+// // Задача № 33 "ФОРМАТИРОВАНИЕ СООБЩЕНИЯ"
+
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   result = message.length <= maxLength ? message : message.slice(0, maxLength) + '...';
+//   /// Change code above this line
+  
+//   console.log(result);
+
+//   return result;
+// }
+
+
+/*===================================*/
+// // Задача № 34 "МЕТОДЫ 'TOLOWERCASE()' И 'TOUPPERCASE()'"
+
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
+
+//   console.log(normalizedInput);
+
+//   return normalizedInput;
+// }
+
+// normalizeInput('AAAAAAAA');
+
+
+/*===================================*/
+// // Задача № 35 "МЕТОДЫ 'МЕТОД INCLUDES()'"
+
+// function checkForName(fullName, name) {
+//  const result = fullName.includes(name); // Change this line
+  
+//   console.log(result);
+  
+//   return result;
+// }
+
+// checkForName('Евгений Рымарчук', 'Евгений');
+
+
+/*===================================*/
+// // Задача № 36 "ПРОВЕРКА СПАМА"
+
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+  result = message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale');
+  // Change code above this line
+  
+  console.log(result);
+  
+  return result;
+}
+
+checkForSpam('Lorem ipsum sPam sit sAle.');
 
