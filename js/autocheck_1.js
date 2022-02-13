@@ -467,16 +467,16 @@
 /*===================================*/
 // // Задача № 36 "ПРОВЕРКА СПАМА"
 
-function checkForSpam(message) {
-  let result;
-  // Change code below this line
-  result = message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale');
-  // Change code above this line
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   result = message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale');
+//   // Change code above this line
   
-  console.log(result);
+//   console.log(result);
   
-  return result;
-}
+//   return result;
+// }
 
-checkForSpam('Lorem ipsum sPam sit sAle.');
+// checkForSpam('Lorem ipsum sPam sit sAle.');
 
