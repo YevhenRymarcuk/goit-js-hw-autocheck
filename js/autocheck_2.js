@@ -341,11 +341,11 @@
 
 // function calculateTotalPrice(order) {
 //   let total = 0;
-//   // Change code below this line
+
 //   for (const orderItem of order) {
 //     total += orderItem;
 //   }
-//   // Change code above this line
+
 //   return total;
 // }
 
@@ -353,60 +353,197 @@
 /*=======================================================*/
 // Задача № 21: "ПОИСК САМОГО ДЛИННОГО СЛОВА"
 
+// function findLongestWord(string) {
+
+//   let arrayFromString = string.split(' ');
+//   let longestWord = arrayFromString[0];
+  
+//   for (let i = 0; i < arrayFromString.length; i += 1) {
+    
+//     if (arrayFromString[i].length > longestWord.length) {
+//       longestWord = arrayFromString[i];
+//     }
+//   }
+  
+//   return longestWord;
+// }
+
+// console.log(findLongestWord('Нихрена не пойму'));
+
+// console.log(findLongestWord('Ну и задачка...'));
+
+/*=======================================================*/
+// Задача № 22: "МЕТОД PUSH()"
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+  
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+  
+//   return numbers;
+// }
+
+// console.log(createArrayOfNumbers(5, 10));
+
+/*=======================================================*/
+// Задача № 23: "ФИЛЬТРАЦИЯ МАССИВА ЧИСЕЛ"
+
+// function filterArray(numbers, value) {
+//   const newArray = [];
+
+//   for (const number of numbers) {
+    
+//     if (number > value) {
+//       newArray.push(number);
+//     }
+//   }
+//   return newArray;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5, 6, 7, 8], 4));
+
+/*=======================================================*/
+// Задача № 24: "МЕТОД INCLUDES()"
+
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return fruits.includes(fruit);
+// }
+
+// console.log(checkFruit('fruit'));
+
+/*=======================================================*/
+// Задача № 25: "ОБЩИЕ ЭЛЕМЕНТЫ"
+// const badMarks = [1, 2, 3, 4, 5, 6, 7];
+// const goodMarks = [6, 7, 8, 9, 10, 11, 12];
+
+// function getCommonElements(array1, array2) {
+//   const newArray = [];
+
+//   for (const array1Item of array1) {
+//     if (array2.includes(array1Item)) {
+//       newArray.push(array1Item)
+//     }
+//   }
+
+//   return newArray;
+// }
+
+// console.log(getCommonElements(goodMarks, badMarks));
+
+/*=======================================================*/
+// Задача № 26: "ЦИКЛ FOR...OF"
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (const orderItem of order) {
+//     total += orderItem;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
 
 
 /*=======================================================*/
-// Задача № 22: "------"
+// Задача № 27: "ФИЛЬТРАЦИЯ МАССИВА ЧИСЕЛ 2.0"
 
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
 
+//   for (const number of numbers) {
+    
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
 
-/*=======================================================*/
-// Задача № 23: "------"
-
-
-
-/*=======================================================*/
-// Задача № 24: "------"
-
-
-
-/*=======================================================*/
-// Задача № 25: "------"
-
-
-
-/*=======================================================*/
-// Задача № 26: "------"
-
+//   return filteredNumbers;
+//   // Change code above this line
+// }
 
 
 /*=======================================================*/
-// Задача № 27: "------"
+// Задача № 28: "ОПЕРАТОР %"
 
-
-
-/*=======================================================*/
-// Задача № 28: "------"
-
-
-
-/*=======================================================*/
-// Задача № 29: "------"
-
-
+// // Change code below this line
+// const a = 3 % 1;
+// const b = 4 % 3;
+// const c = 11 % 4;
+// const d = 12 % 7;
+// const e = 8 % 3;
 
 /*=======================================================*/
-// Задача № 30: "------"
+// Задача № 29: "ЧЁТНЫЕ ЧИСЛА"
 
+// function getEvenNumbers(start, end) {
+//   const evenNumbers = [];
+  
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       evenNumbers.push(i);
+//     }
+//   }
 
+//   return evenNumbers;
+// }
+
+// console.log(getEvenNumbers(7, 22));
 
 /*=======================================================*/
-// Задача № 31: "------"
+// Задача № 30: "ОПЕРАТОР BREAK"
 
+// const start = 6;
+// const end = 27;
+// let number;
 
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+// console.log(number);
 
 /*=======================================================*/
-// Задача № 32: "------"
+// Задача № 31: "ОПЕРАТОР BREAK VS RETURN В ФУНКЦИИ"
 
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+
+//   return `Число, делимое на ${divisor} без остатка, не найдено!`;
+//   // Change code above this line
+// }
+
+// console.log(findNumber(15, 20, 7));
+
+/*=======================================================*/
+// Задача № 32: "ФУНКЦИЯ INCLUDES()"
+
+// function includes(array, value) {
+//   // Change code below this line
+//   for (const arrayItem of array) {
+//     if (arrayItem === value) {
+//       return true;
+//     }
+//   }
+
+//   return false;
+//   // Change code above this line
+// }
+
+// console.log(includes(['mango', 'orange', 'banana', 'peach'], 'peach'));
 
 
