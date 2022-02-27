@@ -253,7 +253,7 @@
 
 // for (const key in book) {
 //   // Ключ
-//   console.log(key);
+// //   console.log(key);
 //   // Значение свойства с таким ключом
 //   console.log(book[key]);
 // }
@@ -368,29 +368,29 @@
 
 // ====================================================
 
-// const books = [
-//   {
-//     title: "The Last Kingdom",
-//     author: "Bernard Cornwell",
-//     rating: 8.38,
-//   },
-//   {
-//     title: "На берегу спокойных вод",
-//     author: "Роберт Шекли",
-//     rating: 8.51,
-//   },
-//   {
-//     title: "Сон смешного человека",
-//     author: "Федор Достоевский",
-//     rating: 7.75,
-//   },
-// ];
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "На берегу спокойных вод",
+    author: "Роберт Шекли",
+    rating: 8.51,
+  },
+  {
+    title: "Сон смешного человека",
+    author: "Федор Достоевский",
+    rating: 7.75,
+  },
+];
 
 // for (const book of books) {
 //     // console.log(book);
 //     // console.log(book.author);
 //     // console.log(book.title);
-//     console.log(book.rating);
+//     // console.log(book.rating);
 // }
 
 // let total = 0;
@@ -399,7 +399,7 @@
 //     total += book.rating;
 // }
 
-// let averagRating = Number((total / books.length).toFixed(2));
+// const averagRating = Number((total / books.length).toFixed(2));
 
 // console.log(total);
 // console.log(averagRating);
