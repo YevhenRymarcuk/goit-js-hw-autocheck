@@ -151,15 +151,16 @@ const account = {
   }
 };
 
-account.deposit(1000);
-console.log(account);
-account.deposit(2000);
-console.log(account);
+// // Мои проверки
+// account.deposit(1000);
+// console.log(account);
+// account.deposit(2000);
+// console.log(account);
 
-account.withdraw(2000);
-console.log(account);
-account.withdraw(2000);
-console.log(account);
+// account.withdraw(2000);
+// console.log(account);
+// account.withdraw(2000);
+// console.log(account);
 
 
 
@@ -178,9 +179,128 @@ console.log(account);
 // console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 
 /*=======================================================*/
-// Задача № 3: "------"
+// Задача № 3: "КОРЗИНА ТОВАРОВ"
 
+/*
+ * Работем с коллекцией товаров в корзине:
+ * - getItems()
+ * - add(product)
+ * - remove(productName)
+ * - clear()
+ * - countTotalPrice()
+ * - increaseQuantity(productName)
+ * - decreaseQuantity(productName)
+ *
+ * { name: '🍎', price: 50 }
+ * { name: '🍇', price: 70 }
+ * { name: '🍋', price: 60 }
+ * { name: '🍓', price: 110 }
+ */
 
+// const apple = { name: '🍎', price: 50 };
+// const grape = { name: '🍇', price: 70 };
+// const lemon = { name: '🍋', price: 60 };
+// const strawberry = { name: '🍓', price: 110 };
+
+// const cart = {
+//   items: [],
+//   getItems() {
+//     return this.items;
+//   },
+//   add(product) {
+
+//     for (const item of this.items) {
+    
+//       if (product === item) {
+//         return item.quantity += 1;
+//       } 
+//     }
+    
+//     this.items.push(product);
+//     product.quantity = 1;
+
+//   },
+//   remove(productName) {
+    
+//     for (const item of this.items) {
+
+//       if (productName === item.name) {
+//         this.items.splice(this.items.indexOf(item), 1)
+//       }
+//     };
+//   },
+//   clear() {
+//     this.items.splice(0, this.items.length)
+
+//     return 'Корзина очищена!'
+//   },
+//   countTotalPrice() {
+//     let totalPrice = 0;
+
+//     for (const item of this.items) {
+
+//       totalPrice += (item.price * item.quantity);
+//     }
+    
+//     return totalPrice;
+//   },
+//   increaseQuantity(productName) {
+
+//     for (const item of this.items) {
+      
+//       if (productName === item.name) {
+
+//         return item.quantity += 1;
+//       }
+//     }
+//   },
+//   decreaseQuantity(productName) {
+
+//     for (const item of this.items) {
+
+//       if (productName === item.name) {
+        
+//         item.quantity -= 1;
+//       }
+
+//       if (item.quantity < 1) {
+        
+//         return this.remove(productName);
+//       }
+//     }
+//   },
+// };
+
+// console.table(cart.getItems());
+
+// cart.add(apple);
+// cart.add(apple);
+// cart.add(apple);
+// cart.add(grape);
+// cart.add(grape);
+// cart.add(grape);
+// cart.add(lemon);
+// cart.add(lemon);
+// cart.add(strawberry);
+// cart.add(strawberry);
+
+// console.table(cart.getItems());
+
+// cart.remove('🍎');
+// console.table(cart.getItems());
+
+// console.log(cart.clear());
+// console.table(cart.getItems());
+
+// cart.increaseQuantity('🍎');
+// console.table(cart.getItems());
+
+// cart.decreaseQuantity('🍋');
+// cart.decreaseQuantity('🍋');
+// cart.decreaseQuantity('🍋');
+// console.table(cart.getItems());
+
+// console.log('Total: ', cart.countTotalPrice());
 
 /*=======================================================*/
 // Задача № 4: "------"
