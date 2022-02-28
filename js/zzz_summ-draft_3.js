@@ -406,39 +406,169 @@
 
 // ====================================================
 
+// const temps = [14, -4, 25, 8, 11];
+// const apple = { name: '🍎', price: 50 };
+// const grape = { name: '🍇', price: 70 };
+// const lemon = { name: '🍋', price: 60 };
+// const strawberry = { name: '🍓', price: 110 };
 
+// // В консоли будет массив
+// console.log(apple);
+// // ❌ Так не сработает, потому что передаём целый массив
+// console.log(Math.max(apple)); // NaN
+
+// // В консоли будет набор отдельных чисел
+// console.log(...apple);
+// // ✅ Распылим коллекцию элементов как отдельные аргументы
+// console.log(Math.max(...apple)); // 25
+
+// ====================================================
+
+// const apple = { name1: '🍎', price1: 50 };
+// const grape = { name2: '🍇', price2: 70 };
+// const lemon = { name3: '🍋', price3: 60 };
+
+// // Это точная, но независимая копия массива temps
+// const allFruits = { ...apple, ...grape, ...lemon };
+// console.log(allFruits); // [14, -4, 25, 8, 11]
+
+// ====================================================
+
+// function multiply({...args}) {
+//   console.log(args); // массив всех аргументов
+// }
+
+// multiply({ a: 1, b: 2, c: 3, });
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+
+// ====================================================
+
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//   console.log(firstNumber); // Значение первого аргумента
+//   console.log(secondNumber); // Значение второго аргумента
+//   console.log(otherArgs); // Массив остальных аргументов
+// }
+
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+
+// ====================================================
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: false,
+//   rating: 8.38,
+// };
+
+// const accessType = book.isPublic ? "публичном" : "закрытом";
+// const message = `Книга ${book.title} автора ${book.author} с рейтингом ${book.rating} находится в ${accessType} доступе.`;
+
+// console.log(message);
+
+// ====================================================
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+
+// // Деструктуризируем
+// const { title: newTitle, author: master, isPublic, rating, coverImage = 'x' } = book;
+// // console.log(coverImage); // undefined
+
+// const accessType = isPublic ? "публичном" : "закрытом";
+// const message = `Книга ${newTitle} автора ${master} с рейтингом ${rating} находится в ${accessType} доступе. "${coverImage}"`;
+
+// console.log(message);
+
+// ====================================================
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     rating: 8.51,
+//   },
+// ];
+
+// for (const { title, author, rating } of books) {
+   
+//   console.log(title);
+//   console.log(author);
+//   console.log(rating);
+// }
+
+// ====================================================
+
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+
+// const {
+//   name,
+//   tag: newTag = "xxx",
+//   stats: { followers, views: userViews, likes: userLikes = 0 },
+// } = user;
+
+// console.log(name); // Jacques Gluke
+// console.log(newTag); // jgluke
+// console.log(followers); // 5603
+// console.log(userViews); // 4827
+// console.log(userLikes); // 1308
+
+// ====================================================
+
+// const rgb = [200, 'xxx', 255, 100, ];
+// const [red, green, blue, gray] = rgb;
+
+// console.log(red);
+// console.log(green);
+// console.log(blue);
+// console.log(gray);
+
+// console.log(`R:${red},G:${green},B:`); // "R:200,G:255,B:100"
+
+// ====================================================
+
+const user = {
+  name: "Jacques Gluke",
+  tag: "jgluke",
+  stats: {
+    followers: 5603,
+    views: 4827,
+    likes: 1308,
+  },
+};
+
+const addAge = function (user) {
+
+    const { name: newName, tag, stats: {followers, views, likes,}, } = user;
+    
+    return { age: 23, newName, stats: { likes, disLikes: 1000} };
+};
+
+console.log(addAge(user));
 
 // ====================================================
 
 
 
 // ====================================================
-
-
-
-// ====================================================
-
-
-
-// ====================================================
-
-
-
-// ====================================================
-
-
-
-// ====================================================
-
-
-
-// ====================================================
-
-
-
-// ====================================================
-
-
-
-// ====================================================
-
