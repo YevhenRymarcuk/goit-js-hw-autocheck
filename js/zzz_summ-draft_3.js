@@ -548,24 +548,24 @@
 
 // ====================================================
 
-const user = {
-  name: "Jacques Gluke",
-  tag: "jgluke",
-  stats: {
-    followers: 5603,
-    views: 4827,
-    likes: 1308,
-  },
-};
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
 
-const addAge = function (user) {
+// const addAge = function (user) {
 
-    const { name: newName, tag, stats: {followers, views, likes,}, } = user;
+//     const { name: newName, tag, stats: {followers, views, likes,}, } = user;
     
-    return { age: 23, newName, stats: { likes, disLikes: 1000} };
-};
+//     return { age: 23, newName, stats: { likes, disLikes: 1000} };
+// };
 
-console.log(addAge(user));
+// console.log(addAge(user));
 
 // ====================================================
 
