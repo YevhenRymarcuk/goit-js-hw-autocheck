@@ -569,6 +569,44 @@
 
 // ====================================================
 
+// const first = {
+//     a: 1,
+//     b: 2,
+// };
+
+// const second = Object.create(first);
+// second.c = 3;
+// second.d = 4;
+        
+// console.log(second);
+
+// const third = Object.create(second);
+// third.e = 5;
+// third.f = 6;
+// console.log(third);
+
+// const first = {
+//     a: 1,
+//     b: 2,
+// };
+// console.log(first);
+
+// const second = Object.create(first);
+// second.a = 3;
+// second.b = 4;
+// console.log(second);
+
+// const third = Object.create(second);
+// third.a = 5;
+// third.b = 6;
+// console.log(third);
+
+// ====================================================
+
+
+
+// ====================================================
+
 
 
 // ====================================================
