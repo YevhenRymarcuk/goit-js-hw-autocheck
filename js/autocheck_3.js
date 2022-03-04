@@ -1054,8 +1054,8 @@
 
 // const {
 //   today: {
-//     high: highToday, 
-//     low: lowToday, 
+//     high: highToday,
+//     low: lowToday,
 //     icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
 //   },
 //   tomorrow: {
@@ -1071,59 +1071,350 @@
 // console.log(lowTomorrow);
 
 /*=======================================================*/
-// Задача № 26: "------"
+// Задача № 26: "ПАТТЕРН «ОБЪЕКТ НАСТРОЕК»"
+
+/*
+* // Change code below this line
+* function calculateMeanTemperature(forecast) {
+*   const todayLow = forecast.today.low;
+*   const todayHigh = forecast.today.high;
+*   const tomorrowLow = forecast.tomorrow.low;
+*   const tomorrowHigh = forecast.tomorrow.high;
+* 
+*   // Change code above this line
+*   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+* }
+*/
+
+// const forecast = {
+//     today: { low: 10, high: 20 },
+//     tomorrow: { low: 20, high: 30 }
+// };
+
+// function calculateMeanTemperature(forecast) {
+  
+//     const {
+//         today: {
+//             low: todayLow,
+//             high: todayHigh,
+//         },
+//         tomorrow: {
+//             low: tomorrowLow,
+//             high: tomorrowHigh,
+//         },
+//     } = forecast
+//         // Change code above this line
+//     return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) % 4 !== 0
+//         ? Number(((todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4).toFixed(1))
+//         : (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// };
 
 
+// console.log(calculateMeanTemperature(forecast));
+        
+/*=======================================================*/
+// Задача № 27: "ОПЕРАЦИЯ SPREAD ПРИ ПЕРЕДАЧЕ АРГУМЕНТОВ"
+
+/*
+* const scores = [89, 64, 42, 17, 93, 51, 26];
+* // Change code below this line
+* const bestScore = scores;
+* const worstScore = scores;
+*/
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+// console.log(bestScore);
+// console.log(worstScore);
+// console.log(scores);
 
 /*=======================================================*/
-// Задача № 27: "------"
+// Задача № 28: "ОПЕРАЦИЯ SPREAD ПРИ СОЗДАНИИ НОВОГО МАССИВА"
 
+/*
+* const firstGroupScores = [64, 42, 93];
+* const secondGroupScores = [89, 14, 51, 26];
+* const thirdGroupScores = [29, 47, 18, 97, 81];
+* // Change code below this line
+* const allScores = [];
+* const bestScore = allScores;
+* const worstScore = allScores;
+*/
 
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
 
-/*=======================================================*/
-// Задача № 28: "------"
-
-
-
-/*=======================================================*/
-// Задача № 29: "------"
-
-
-
-/*=======================================================*/
-// Задача № 30: "------"
-
-
-
-/*=======================================================*/
-// Задача № 31: "------"
-
-
-
-/*=======================================================*/
-// Задача № 32: "------"
-
-
+// console.log(allScores);
+// console.log(bestScore);
+// console.log(worstScore);
 
 /*=======================================================*/
-// Задача № 33: "------"
+// Задача № 29: "ОПЕРАЦИЯ SPREAD ПРИ СОЗДАНИИ НОВОГО ОБЪЕКТА"
 
+/*
+* const defaultSettings = {
+*   theme: "light",
+*   public: true,
+*   withPassword: false,
+*   minNumberOfQuestions: 10,
+*   timePerQuestion: 60,
+* };
+* const overrideSettings = {
+*   public: false,
+*   withPassword: true,
+*   timePerQuestion: 30,
+* };
+* // Change code below this line
+* const finalSettings = {};
+*/
 
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+// console.log(finalSettings);
 
 /*=======================================================*/
-// Задача № 34: "------"
+// Задача № 30: "КАРТОЧКИ ЗАДАЧ"
 
+/*
+* function makeTask(data) {
+*   const completed = false;
+*   const category = "General";
+*   const priority = "Normal";
+*   // Change code below this line
+* 
+*   // Change code above this line
+* }
+*/
 
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   return { completed, category, priority, ...data,};
+//   // Change code above this line
+// }
+
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
 
 /*=======================================================*/
-// Задача № 35: "------"
+// Задача № 31: "ОПЕРАЦИЯ REST ДЛЯ СБОРА ВСЕХ АРГУМЕНТОВ ФУНКЦИИ"
 
+/*
+* // Change code below this line
+* function add() {
+*   // Change code above this line
+* }
+*/
 
+// // Change code below this line
+// function add(...args) {
+//     let sum = 0;
+
+//     for (const arg of args) {
+//         sum += arg;
+//     };
+
+//     return sum;
+//   // Change code above this line
+// };
+
+// console.log(add());
 
 /*=======================================================*/
-// Задача № 36: "------"
+// Задача № 32: "ОПЕРАЦИЯ REST ДЛЯ СБОРА ЧАСТИ АРГУМЕНТОВ ФУНКЦИИ"
 
+/*
+* // Change code below this line
+* function addOverNum(...args) {
+*   let total = 0;
+* 
+*   for (const arg of args) {
+*     total += arg;
+*   }
+* 
+*   return total;
+*   // Change code above this line
+* }
+*/
 
+// ///// Блочный вариант.
+// function addOverNum(comparedNum , ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+      
+//     if (arg > comparedNum) {
+//         total += arg
+//     };
+//   };
+
+//   return total;
+//   // Change code above this line
+// };
+
+// ///// Строчный вариант.
+// function addOverNum(comparedNum , ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (arg > comparedNum) total += arg;
+//   };
+
+//   return total;
+//   // Change code above this line
+// };
+
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+
+/*=======================================================*/
+// Задача № 33: "МАССИВ СОВПАДЕНИЙ"
+
+/*
+* // Change code below this line
+* function findMatches() {
+*   const matches = []; // Don't change this line
+* 
+*   // Change code above this line
+*   return matches;
+* }
+*/
+
+// ///// Вариант 1.
+// // Change code below this line
+// function findMatches(massiv, ...otherArgs) {
+//   const matches = []; // Don't change this line
+
+//   for (const arg of otherArgs) {
+//     if (massiv.includes(arg)) matches.push(arg);
+//   };
+//   // Change code above this line
+//   return matches;
+// };
+
+// ///// Вариант 2.
+// // Change code below this line
+// function findMatches(massiv, ...otherArgs) {
+//   const matches = []; // Don't change this line
+
+//   for (const arg of otherArgs) {
+//     for (const element of massiv) {
+//         if (element === arg) matches.push(arg);
+//     };
+//   };
+//   // Change code above this line
+//   return matches;
+// };
+
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+
+/*=======================================================*/
+// Задача № 34: "МЕТОДЫ ОБЪЕКТА"
+
+/*
+* const bookShelf = {
+*   // Change code below this line
+*   books: ["The last kingdom", "The guardian of dreams"],
+*   getBooks() {
+*     return "Returning all books";
+*   },
+*   addBook(bookName) {
+*     return `Adding book ${bookName}`;
+*   },
+*   // Change code above this line
+* };
+*/
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+//   // Change code above this line
+// };
+
+/*=======================================================*/
+// Задача № 35: "ДОСТУП К СВОЙСТВАМ ОБЪЕКТА В ЕГО МЕТОДАХ"
+
+/*
+* const bookShelf = {
+*   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+*   updateBook(oldName, newName) {
+*     // Change code below this line
+*     // Change code above this line
+*   },
+* };
+*/
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     this.books.splice(this.books.indexOf(oldName), 1, newName);
+//     // Change code above this line
+//   },
+// };
+
+// ///// Вариант 2.
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     const bookIndex = this.books.indexOf(oldName);
+//     this.books.splice(bookIndex, 1, newName);
+//     // Change code above this line
+//   },
+// };
+
+// bookShelf.updateBook('Haze', 'Peace of the world');
+// console.log(bookShelf.books);
+
+/*=======================================================*/
+// Задача № 36: "ЛАВКА ЗЕЛИЙ «У СТАРОЙ ЖАБЫ»"
+
+/*
+* const atTheOldToad = {
+*   // Change code below this line
+*   // Change code above this line
+* };
+*/
+
+// const atTheOldToad = {
+//   // Change code below this line
+//   potions: [],
+//   // Change code above this line
+// };
 
 /*=======================================================*/
 // Задача № 37: "------"
